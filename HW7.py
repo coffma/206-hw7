@@ -2,7 +2,7 @@
 # Your name: Julia Coffman
 # Your student id:53549712
 # Your email: coffma@umich.edu
-# List who you have worked with on this project:
+# List who you have worked with on this project: Raina Gebara, Emily Libman, Divum Mittal
 
 import unittest
 import sqlite3
