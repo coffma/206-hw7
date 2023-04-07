@@ -117,7 +117,6 @@ def nationality_search(countries, cur, conn):
 #     This function returns a list of tuples each containing 
 #     the player’s name, nationality, and birth year. 
 
-### THIS ONE IS OK
 def birthyear_nationality_search(age, country, cur, conn):
     cur.execute("SELECT * FROM Players")
     players_data = cur.fetchall()
