@@ -52,24 +52,7 @@ def make_positions_table(data, cur, conn):
 #     the position in the Positions table we 
 #     created for you -- see make_positions_table above for details.
 
-# def make_players_table(data, cur, conn):
-#     cur.execute('DROP TABLE IF EXISTS Players')
-#     cur.execute('CREATE TABLE Players (id INTEGER, name TEXT, position_id INTEGER, birthyear INTEGER, nationality TEXT)')
-#     conn.commit()
 
-#     cur.execute("SELECT * FROM Positions")
-#     result = cur.fetchall()
-#     position_value = {position[1]: position[0] for position in result}
-
-#     for element in data['squad']:
-#         current_position = element["position"]
-#         birth = element['dateOfBirth'].split('-')[0]
-#         id = element['id']
-#         name = element['name']
-#         nationality = element["nationality"]
-#         position_id = position_value[current_position]
-#         cur.execute('INSERT INTO Players (id, name, position_id, birthyear, nationality) VALUES (?,?,?,?,?)',(id, name ,position_id, birth, nationality))
-#     conn.commit()
 
 #####THIS ONE WORKS
 def make_players_table(data, cur, conn):
