@@ -52,9 +52,6 @@ def make_positions_table(data, cur, conn):
 #     the position in the Positions table we 
 #     created for you -- see make_positions_table above for details.
 
-
-
-#####THIS ONE WORKS
 def make_players_table(data, cur, conn):
     cur.execute("DROP TABLE IF EXISTS Players")
     cur.execute("CREATE TABLE IF NOT EXISTS Players (id INTEGER PRIMARY KEY, name TEXT, position_id INTEGER, birthyear INTEGER, nationality TEXT)")
